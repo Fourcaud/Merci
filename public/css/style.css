@@ -2,6 +2,7 @@
  * Basic typography style for copy text
  */
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic);
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300";
 html,
 body {
   height: 100%;
@@ -38,6 +39,10 @@ p {
   color: #6c5299;
   font-size: 6em;
   text-align: center;
+}
+
+.btnRafraichir {
+  display: none;
 }
 
 .cake {
@@ -219,6 +224,39 @@ h1 {
   font-size: 6em;
   text-align: center;
   display: none;
+}
+
+.btn-wrapper {
+  display: none;
+  position: fixed;
+  top: calc(50% - 22px);
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  box-shadow: none;
+  appearance: none;
+  border: 0;
+  outline: 0;
+  background-color: #00f0a8;
+  height: 45px;
+  line-height: 42px;
+  padding: 0 30px;
+  font-size: 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.2, 3, 0.4, 1);
+  user-select: none;
+}
+.btn:hover {
+  transform: scale(1.1, 1.1);
+}
+.btn:active {
+  transform: scale(1.05, 1.05);
 }
 
 /*# sourceMappingURL=style.css.map */
