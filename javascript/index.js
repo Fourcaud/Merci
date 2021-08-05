@@ -22,17 +22,10 @@ function fin() {
 }
 
 var btn = document.getElementsByClassName("btn")[0];
-
 var txtPosition = 0;
-
 btn.addEventListener("mouseup", function (e) {
-  mouseX = e.clientX;
-  mouseY = e.clientY;
-
   changeText();
 });
-
-// Text
 
 var btnTxt = [
   "hehe",
@@ -55,5 +48,7 @@ function changeText() {
   if (txtPosition !== btnTxt.length) {
     btn.innerHTML = btnTxt[txtPosition];
     txtPosition += 1;
+  } else {
+    document.location.reload();
   }
 }

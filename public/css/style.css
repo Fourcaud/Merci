@@ -10,11 +10,39 @@ body {
 
 body {
   background: #a27bcc;
-  background: -moz-radial-gradient(center, ellipse cover, #a27bcc 0%, #6c5299 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #a27bcc), color-stop(100%, #6c5299));
-  background: -webkit-radial-gradient(center, ellipse cover, #a27bcc 0%, #6c5299 100%);
-  background: -o-radial-gradient(center, ellipse cover, #a27bcc 0%, #6c5299 100%);
-  background: -ms-radial-gradient(center, ellipse cover, #a27bcc 0%, #6c5299 100%);
+  background: -moz-radial-gradient(
+    center,
+    ellipse cover,
+    #a27bcc 0%,
+    #6c5299 100%
+  );
+  background: -webkit-gradient(
+    radial,
+    center center,
+    0px,
+    center center,
+    100%,
+    color-stop(0%, #a27bcc),
+    color-stop(100%, #6c5299)
+  );
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    #a27bcc 0%,
+    #6c5299 100%
+  );
+  background: -o-radial-gradient(
+    center,
+    ellipse cover,
+    #a27bcc 0%,
+    #6c5299 100%
+  );
+  background: -ms-radial-gradient(
+    center,
+    ellipse cover,
+    #a27bcc 0%,
+    #6c5299 100%
+  );
   background: radial-gradient(ellipse at center, #a27bcc 0%, #6c5299 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#a27bcc", endColorstr="#6c5299",GradientType=1 );
 }
@@ -229,7 +257,7 @@ h1 {
 .btn-wrapper {
   display: none;
   position: fixed;
-  top: calc(50% - 22px);
+  top: calc(20% - 22px);
   left: 0;
   width: 100%;
   text-align: center;
